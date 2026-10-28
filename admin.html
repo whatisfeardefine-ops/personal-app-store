@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><title>Owner Dashboard · Personal App Store</title><link rel="stylesheet" href="style.css"></head><body><header class="top"><a class="brand" href="./"><span class="logo">P</span><span>Personal App Store</span></a><a class="admin-link" href="./">← Public store</a></header><main class="admin-wrap"><p class="eyebrow">OWNER TOOLS</p><h1 style="font-size:clamp(38px,6vw,56px);letter-spacing:-2px">Store dashboard</h1><p class="sub">Manage your app releases and the public catalog through your GitHub account.</p><section class="admin-panel"><h2>1. Upload an APK</h2><p>Create a GitHub Release and attach your APK file. This avoids putting large APK files directly into the website repository.</p><a class="action" href="https://github.com/whatisfeardefine-ops/personal-app-store/releases/new" target="_blank" rel="noopener">Create app release ↗</a></section><section class="admin-panel"><h2>2. Publish it in the store</h2><p>Edit <code>apps.json</code> and add your app details. Use the APK asset's download URL from its GitHub Release as <code>downloadUrl</code>.</p><a class="action" href="https://github.com/whatisfeardefine-ops/personal-app-store/edit/main/apps.json" target="_blank" rel="noopener">Edit app catalog ↗</a><p>Example catalog entry:</p><pre style="white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1020;padding:14px;border-radius:10px;color:#dce8f7">{
+  "apps": [
+    {
+      "name": "Your App",
+      "version": "1.0",
+      "category": "Tools",
+      "minAndroid": "7.0+",
+      "description": "Describe what your app does.",
+      "downloadUrl": "PASTE_RELEASE_APK_URL_HERE",
+      "iconUrl": ""
+    }
+  ]
+}</pre></section><section class="admin-panel"><h2>3. Your repository</h2><p>Only people with permission to your GitHub repository can change the catalog. This dashboard contains no password or secret token.</p><a class="action" href="https://github.com/whatisfeardefine-ops/personal-app-store" target="_blank" rel="noopener">Open GitHub repository ↗</a><a class="action" href="https://github.com/whatisfeardefine-ops/personal-app-store/releases" target="_blank" rel="noopener">Manage releases ↗</a><p class="note">This is a static dashboard, not a private login system. Keep repository write access limited to yourself. Publishing a catalog change updates the public site after Pages deployment.</p></section></main><footer><span>Personal App Store · Owner dashboard</span><span><a href="./">Back to store</a></span></footer></body></html>
