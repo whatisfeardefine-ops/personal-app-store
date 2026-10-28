@@ -1,3 +1,4 @@
+# Deploy the Personal App Store to GitHub Pages
 name: Deploy app store to GitHub Pages
 on:
   push:
