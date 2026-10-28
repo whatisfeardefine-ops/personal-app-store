@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://whatisfeardefine-ops.github.io/personal-app-store/sitemap.xml
