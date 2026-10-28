@@ -1,3 +1,13 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "name": "FarazInvesting",
+      "version": "1.0",
+      "category": "Finance",
+      "minAndroid": "6.0+",
+      "description": "Our Investing App helps users manage investment amounts, monitor reserve funds, and calculate candle-based investment values. Features include investment amount management, reserve fund tracking, candle-based calculations, and clearer allocation of entered amounts. This app is a calculation and investment-management tool; it does not guarantee profits or eliminate investment risks. Verify calculations and make investment decisions carefully.",
+      "downloadUrl": "https://github.com/whatisfeardefine-ops/personal-app-store/releases/download/farazinvesting-v1.0/app-debug.apk",
+      "iconUrl": ""
+    }
+  ]
 }
